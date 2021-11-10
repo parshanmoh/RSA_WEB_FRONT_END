@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .wrapper {
+        text-align: center;
+        font-size: 25px;
+    }
+  
+      
+      .button {
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+}
+
+      .button1 {background-color: #4CAF50;}
+      ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+            border-right:1px solid #bbb;
+        }
+
+        li:last-child {
+            border-right: none;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+  </style>
+</head>
+<body>
+        <ul>
+          <li><a class="active" href="key_generating.html">Home</a></li>
+          <li><a href="encryption.html">Encryption</a></li>
+          <li><a href="decryption.html">Decryption</a></li>
+          <li style="float:right"><a href="about">Github</a></li>
+        </ul>
+        <br>
+        <div class="wrapper">
+          <br>
+          <h> Encryption Section</h>
+          <br>
+          <br>
+          <p> please upload public key and your file <br>to encrypt it then automaticly encrypted file will upload in your google drive.</p>
+          <br>
+          <br>
+          <div>
+          <label> Select public key to upload </label>
+          <input type="file" id="file" >
+          </div>
+          <br>
+          <br>
+          <div>
+          <label> Select file to encrypt</label>
+          <input type="file" id="file1" >
+          </div>
+          <br>
+          <br>
+          <button class= "button button1 text-center" type="submit" onclick="encryption()" > Upload </button>
+        </div>
+      
+    <script src="encryption.js"></script>
+</body>
+</html>
